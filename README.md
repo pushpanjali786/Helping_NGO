@@ -9,7 +9,7 @@ We try to ensure that animals receive the proper care and attention they need. T
 - Follow-up care: Planning for follow-up care after the rescue operation, including medical care and adoption services, is essential to ensure that animals continue to receive the care they need.
 
 # visit 👉 
-- https://badshahyadav.github.io/HelpingNGO/
+- https://pushpanjali786.github.io/Helping_NGO/
 ## How to Use
 
 - Click on the emergency button.
