@@ -1,0 +1,111 @@
+body {
+  font-family: serif;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 9;
+  width: 100%;
+  height: 50px;
+  background-color: #23b5bd;
+}
+.container p {
+  margin-top: 70px;
+  text-align: center;
+}
+.cards {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card {
+  margin-bottom: 30px;
+  width: 300px;
+  border: 2px solid #769698a3;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.Card img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.details {
+  padding: 20px;
+  text-align: center;
+}
+
+.details h4 {
+  margin-bottom: 5px;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.logo a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #777;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+.Card:hover {
+  --b: 0.1em;
+  --c: #10959c;
+
+  color: rgba(0, 0, 0, 0);
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, rgb(15, 15, 15) 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.2s calc(0.3s - var(--_s, 0s));
+}
+.Card:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+  transform: scale(0.98);
+}
+
+.Pcontainer {
+  /* border: 2px solid grey; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.p {
+  width: 300px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.font {
+  font-size: 3rem;
+}
+.a {
+  align-items: center;
+}

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helping NGO</title>
+    <!-- bootstrap css link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- dfghjk -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awose js link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac0e8e4609.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/custom.css" />
+  </head>
+
+  <body >
+
+    <!-- navBar Start from here  -->
+
+    <nav class="navbar navbar-expand-lg" id="navBody">
+      <i class="fa-solid fa-paw" id="navIcon"></i>
+      <div class="container-fluid">
+        <h3>Helping NGO</h3>
+        <!-- <a class="navbar-brand" href="#">Helping NGO</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navBarDiv">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Service</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deparments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="NGOs.html" target="_blank">NGOs</a></li>
+                  <li><a class="dropdown-item" href="Doctors.html" target="_blank">Doctors</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="volunteer.html" target="_blank">Volunteer</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       <!-- Emergency button  -->
+       <button
+       type="button"
+       class="show-modal btn btn-danger"
+       data-toggle="modal"
+       data-target="#emergencyModal"
+     >
+       <i class="fas fa-camera"> </i> Emergency
+     </button>
+          <div class="modal1 hidden"></div>
+          <div class="modal" id="emergencyModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Emergency</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="emergencyForm">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input
+                      placeholder="Enter your name"
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="location">Location:</label>
+                      <input
+                      placeholder="Enter current location"
+                        type="text"
+                        class="form-control"
+                        id="location"
+                        name="location"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="photo">Photo:</label>
+                      <input
+                        type="file"
+                        class="form-control-file"
+                        id="photo"
+                        name="photo"
+                        accept="image/*"
+                        capture
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="video">Video:</label>
+                      <input
+                        type="file"
+                        class="form-control-file"
+                        id="video"
+                        name="video"
+                        accept="video/*"
+                        capture
+                        required
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="close-modal modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-danger"
+                    form="emergencyForm"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- closed here...  -->
+
+        <div class="navButton">
+         <a href="SignUp.html" target="_blank">
+          <button class="btn btn-outline-primary" onclick="myFunction1()" type="submit">SignUp</button>
+         </a> 
+         <a href="Login.html" target="_blank">
+          <button class="btn btn-outline-success" onclick="myFunction2()" type="submit">Login</button>
+         </a>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- navBar Ends here   -->
+
+    <!-- carousel img start from here    -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-img">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="Img/Floral Drawings Slides.jpg"
+              class="d-block w-100"
+              alt="...."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/147424375/photo/young-girl-cries-for-her-puppy.jpg?s=612x612&w=0&k=20&c=a4MMJfrDpTejfgkXXP8W4Np-Fsdh_kkY_gvYrE-yykY="
+              class="d-block w-100"
+              alt="...."
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://media.istockphoto.com/id/1303833951/photo/vet-doctor-examining-labrador-dog.jpg?b=1&s=170667a&w=0&k=20&c=eDF_W7oSmOyYGqJep1cRO_BPDDoJRu_5o1xJPTaS1O0="
+              class="d-block w-100"
+              alt="...."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/494320720/photo/cow-cry-before-it-was-kill.jpg?s=612x612&w=0&k=20&c=A1200-65noaYl2gRPmnMX3HF-9l5ZbEN-zzeSaFUeEE="
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+       </div>
+    
+
+    <!-- carousel-img End  here    -->
+   
+    <!-- services section start here  -->
+
+    <h2>Our Services</h2>
+    <div class="services">
+ 
+      <div class="planning">
+         <i class="fa-solid fa-calendar-plus"></i>
+         <h1>Planning</h1>
+         <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt enim porro aliquid neque quis facilis est a repellat eveniet accusamus explicabo dicta error illum iste tempora vero quod totam, dolorum accusantium natus ut. Voluptatum voluptatem labore repellendus dolorem, cumque accusamus assumenda ea soluta rerum quisquam!dolor sit amet consectetur adipisicing elit. Pariatur vel dolor odio nesciunt, veritatis placeat sunt eius? Repellat, quaerat rem!</p>
+         <button>Read More</button>
+      </div>
+      
+      <div class="support">
+         <i class="fa-solid fa-handshake"></i>
+         <h1>Support</h1>
+         <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt enim porro aliquid neque quis facilis est a repellat eveniet accusamus explicabo dicta error illum iste tempora vero quod totam, dolorum accusantium natus ut. Voluptatum voluptatem labore repellendus dolorem, cumque accusamus assumenda ea soluta rerum quisquam!dolor sit amet consectetur adipisicing elit. Pariatur vel dolor odio nesciunt, veritatis placeat sunt eius? Repellat, quaerat rem!</p>
+         <button>Read More</button>
+      </div>
+ 
+ 
+      <div class="helping">
+         <i class="fa-solid fa-hand-holding-medical"></i>
+         <h1>Helping</h1>
+         <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt enim porro aliquid neque quis facilis est a repellat eveniet accusamus explicabo dicta error illum iste tempora vero quod totam, dolorum accusantium natus ut. Voluptatum voluptatem labore repellendus dolorem, cumque accusamus assumenda ea soluta rerum quisquam!dolor sit amet consectetur adipisicing elit. Pariatur vel dolor odio nesciunt, veritatis placeat sunt eius? Repellat, quaerat rem!</p>
+         <button>Read More</button>
+      </div>
+     </div>
+
+    <!-- services section Ends here  -->
+
+    <!-- About section start here  -->
+
+    <div class="container">
+      <div class="about">
+        <div class="aboutus">
+          <h1>About Us</h1>
+          <p>some key solutions</p>
+        </div>
+
+        <div class="row1">
+          <div class="col-md-6">
+            <img src="Img/img1.jpg" alt="image" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <div class="box1">
+              <p class="words1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                minima sapiente provident. Fugiat delectus quisquam laudantium,
+                fuga eius harum minus illum non nostrum enim dolor voluptatum
+                soluta dignissimos explicabo quasi. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Velit omnis odio quae, ducimus
+                molestias iusto? Totam incidunt repellendus id, non perspiciatis
+                qui aperiam! Quod eius nulla enim mollitia adipisci doloremque.
+              </p>
+              <div class="button">
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="col-md-6">
+            <img src="Img/img2.jpeg" alt="image" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <div class="box2">
+              <p class="words1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                minima sapiente provident. Fugiat delectus quisquam laudantium,
+                fuga eius harum minus illum non nostrum enim dolor voluptatum
+                soluta dignissimos explicabo quasi. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Velit omnis odio quae, ducimus
+                molestias iusto? Totam incidunt repellendus id, non perspiciatis
+                qui aperiam! Quod eius nulla enim mollitia adipisci doloremque.
+              </p>
+              <div class="button">
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row1">
+          <div class="col-md-6">
+            <img src="Img/img3.jpg" alt="image" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <div class="box1">
+              <p class="words1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                minima sapiente provident. Fugiat delectus quisquam laudantium,
+                fuga eius harum minus illum non nostrum enim dolor voluptatum
+                soluta dignissimos explicabo quasi. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Velit omnis odio quae, ducimus
+                molestias iusto? Totam incidunt repellendus id, non perspiciatis
+                qui aperiam! Quod eius nulla enim mollitia adipisci doloremque.
+              </p>
+              <div class="button">
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section Ends here  -->
+
+    <!-- Deparments section starts from here  -->
+
+    <div class="container">
+      <div id="navbar">
+        <div class="head">
+          <h1>Doctors</h1>
+        </div>
+      </div>
+      <p>Doctors are those who always willing to help the needy ones.</p>
+
+      <div class="cards">
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/doc1.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Dipali Sharma</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc2.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Deepak Chandra</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc3.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Doli Yadav</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/doc1.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Dipali Sharma</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc4.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Naveen Prashad</h4>
+            <p>Assitant Doctor</p>
+            <p>PMCH Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc4.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Naveen Prashad</h4>
+            <p>Assitant Doctor</p>
+            <p>PMCH Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc2.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Deepak Chandra</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc4.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Naveen Prashad</h4>
+            <p>Assitant Doctor</p>
+            <p>PMCH Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="container">
+      <div id="navbar">
+        <div class="head">
+          <h1>Volunteer</h1>
+        </div>
+      </div>
+      <p>
+        Welcome! Anyone who want to connect with us in this journey,who willing
+        to help needy animals
+      </p>
+
+      <div class="cards">
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S1.png"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Roshani Srivastava</h4>
+            <p>A B.Sc student</p>
+            <p>Bakhtiyarpur Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Rohan Pal</h4>
+            <p>B.Tech Graduate</p>
+            <p>IIT Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Satyam Verma</h4>
+            <p>B.Tech student</p>
+            <p>BKP Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S1.png"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Roshani Srivastava</h4>
+            <p>A B.Sc student</p>
+            <p>Bakhtiyarpur Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Rohan Pal</h4>
+            <p>B.Tech Graduate</p>
+            <p>IIT Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S3.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Doli Yadav</h4>
+            <p>B.com Graduate</p>
+            <p>BMNU Madheupura</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Satyam Verma</h4>
+            <p>B.Tech student</p>
+            <p>BKP Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S3.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Doli Yadav</h4>
+            <p>B.com Graduate</p>
+            <p>BMNU Madheupura</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Container -->
+    <div class="h">
+        <h1>NGOs</h1>
+    </div>
+
+    <div class="container" id="ngo-container">
+    
+      <div class="ngo">
+        <img
+          src="https://t4.ftcdn.net/jpg/05/26/35/07/240_F_526350772_taMM7EVaoDzWAashADdBrYkjH24hqS3c.jpg"
+          alt=""
+        />
+        <h2>STRAY ANIMAL FOUNDATION OF INDIA</h2>
+
+        <p>
+          Stray Animal Foundation of India works with dedicated advocates on
+          India's front lines to make a difference for the country's most
+          vulnerable animals
+        </p>
+        <br />
+        <a href="">www.google.com</a>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://t3.ftcdn.net/jpg/05/48/19/48/240_F_548194876_QIw6aM3Ws7hAOoUJsFlUF41HDWnXRmMq.jpg"
+          alt=""
+        />
+        <h2>MY FURRIES</h2>
+        <p>
+          Our Goals: 1. To provide protection, medical care, food & shelter to
+          all the strays in need. STRAY ANIMAL FOUNDATION OF INDIA Stray Animal
+          Foundation of India works with dedicated advocates on India's front
+          lines to make a difference for the country's most vulnerable animals
+          NGO 2. To vaccinate & sterilize strays in order to curb the spread of
+          diseases & increase in population. 3. To educate the community about
+          the benefits of stray management & also help implement the same.
+        </p>
+        <br />
+        <a href="">www.bing.com</a>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://t4.ftcdn.net/jpg/04/73/89/55/240_F_473895509_R3WFlBtjZaMwTfwbq8KnIWzxYAWPwyK0.jpg"
+          alt=""
+        />
+        <h2>ANIMAL RAHAT</h2>
+
+        <p>
+          Animal Rahat (rahat means "relief" in Hindi) is a unique program that
+          aims to help some of the most neglected animals in the world-the
+          bullocks, donkeys, and other working animals of India
+        </p>
+        <br /><a href="">www.brave.com</a>
+      </div>
+      <!-- More NGOs here -->
+      <div class="ngo">
+        <img
+          src="https://t4.ftcdn.net/jpg/05/26/35/07/240_F_526350772_taMM7EVaoDzWAashADdBrYkjH24hqS3c.jpg"
+          alt=""
+        />
+        <h2>WILDLIFE TRUST OF INDIA</h2>
+
+        <p>
+          We are the most trusted wildlife conservation charity organization in
+          India, dedicated to preserve and protect the natural world and its
+          wild habitats. Our team has been fully committed to India's wildlife
+          for the last 20+ years.
+        </p>
+        <br />
+        <a href="">www.google.com</a>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://t3.ftcdn.net/jpg/05/48/19/48/240_F_548194876_QIw6aM3Ws7hAOoUJsFlUF41HDWnXRmMq.jpg"
+          alt=""
+        />
+        <h2>KARMA FOUNDATION</h2>
+        <p>
+          We, at Karma Foundation truly believe that animals are the real
+          victims on earth. They didn't declare war, they don't have weapons and
+          they don't want to destroy humans or impose their religion. Their only
+          "crime" is that they exist. Keeping the ever rising cases of
+          accidents, cruelty, starvation, illnesses and so on, we have built an
+          Intensive Care Unit (ICU), Operation Theatre (OT) & Out Patient
+          Department (OPD) for such animals who suffer each day on the streets
+          of the city
+        </p>
+        <br />
+        <a href="">www.bing.com</a>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://t3.ftcdn.net/jpg/05/48/19/48/240_F_548194876_QIw6aM3Ws7hAOoUJsFlUF41HDWnXRmMq.jpg"
+          alt=""
+        />
+        <h2>KARMA FOUNDATION</h2>
+        <p>
+          We, at Karma Foundation truly believe that animals are the real
+          victims on earth. They didn't declare war, they don't have weapons and
+          they don't want to destroy humans or impose their religion. Their only
+          "crime" is that they exist. Keeping the ever rising cases of
+          accidents, cruelty, starvation, illnesses and so on, we have built an
+          Intensive Care Unit (ICU), Operation Theatre (OT) & Out Patient
+          Department (OPD) for such animals who suffer each day on the streets
+          of the city
+        </p>
+        <br />
+        <a href="">www.bing.com</a>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://t3.ftcdn.net/jpg/05/48/19/48/240_F_548194876_QIw6aM3Ws7hAOoUJsFlUF41HDWnXRmMq.jpg"
+          alt=""
+        />
+        <h2>KARMA FOUNDATION</h2>
+        <p>
+          We, at Karma Foundation truly believe that animals are the real
+          victims on earth. They didn't declare war, they don't have weapons and
+          they don't want to destroy humans or impose their religion. Their only
+          "crime" is that they exist. Keeping the ever rising cases of
+          accidents, cruelty, starvation, illnesses and so on, we have built an
+          Intensive Care Unit (ICU), Operation Theatre (OT) & Out Patient
+          Department (OPD) for such animals who suffer each day on the streets
+          of the city
+        </p>
+        <br />
+        <a href="">www.bing.com</a>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://t4.ftcdn.net/jpg/04/73/89/55/240_F_473895509_R3WFlBtjZaMwTfwbq8KnIWzxYAWPwyK0.jpg"
+          alt=""
+        />
+        <h2>STRAY RELIEF AND ANIMAL WELFARE (STRAW)</h2>
+
+        <p>
+          STRAW India is a registered non-profit organization that works for the
+          welfare of animals through the medium of humane and animal welfare
+          education. Our efforts enable us to significantly influence school
+          students to develop empathy towards people, compassion towards animals
+          and care for the natural world so that they can make a difference and
+          bring about a positive change.
+        </p>
+        <br /><a href="">www.brave.com</a>
+      </div>
+    </div>
+    <!-- Deparments section Ends  here  -->
+
+    <!-- Footer start here ! -->
+    <footer>
+      <div class="footer_info">
+          <div class="footer_About">
+              <h1 class="h1">About</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolores nobis, iusto magnam aliquid laboriosam, soluta error pariatur provident repudiandae sequi dicta nesciunt officia sed laborum ut quidem adipisci dolorum.
+              </p>
+              <div class="icons">
+                  <ul>
+                      <li><a href="https://www.instagram.com/_emperor_4k/ " target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href="https://twitter.com/_Emperor_4k " target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/_emperor_4k/" target="_blank" ><i class="fa-brands fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer_Link">
+              <h1>Quick Links</h1>
+              <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="About.html" target="_parent">About</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="About.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer_Contacts">
+              <h1>Contacts</h1>
+              <ul>
+                  <li><i class="fa-sharp fa-solid fa-location-dot"></i> Bakhtiyarpur College Of Engineering,Bakhtiyarpur,Bihar-803212</li>
+                  <li><i class="fa-solid fa-envelope"></i><a href="#"> helpingngo@gmail.com</a></li>
+                  <li><i class="fa-solid fa-phone"></i> <a href="#"> 45656567623</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="copy-right">
+          <p>© COPYRIGHT HELPING NGO   ALL RIGHTS ARE RESERVED.</p>
+      </div>
+  </footer>
+  
+  <!-- Footer ends here ...  -->
+
+    <!-- End Example Code -->
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

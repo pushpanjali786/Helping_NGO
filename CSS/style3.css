@@ -1,0 +1,30 @@
+.about {
+  padding: 50px 0;
+}
+
+.aboutus {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.part1,
+.part2 {
+  margin-bottom: 50px;
+}
+
+.box1 {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #aaa;
+  margin-top: 20px;
+}
+
+.words1 {
+  text-align: justify;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helping NGO</title>
+    <!-- bootstrap css link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- dfghjk -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awose js link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac0e8e4609.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/custom.css" />
+  </head>
+
+  <body >
+
+    <!-- navBar Start from here  -->
+    <nav class="navbar navbar-expand-lg navbar-light " id="navBody">
+      <i class="fa-solid fa-paw" id="navIcon"></i>
+      <div class="container-fluid">
+        <h3> Helping NGO</h3> &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav"> &nbsp; &nbsp; &nbsp; &nbsp;
+
+        
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">&ensp;Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#section--1">&ensp;About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#section--2">&ensp;Service</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                &ensp;Deparments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#section--3" >&ensp;NGOs</a></li>
+                  <li><a class="dropdown-item" href="#section--4" >&ensp;Doctors</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#section--5" >&ensp;Volunteer</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#section--6">&ensp;Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       <!-- Emergency button  -->
+       <button
+       type="button"
+       class="show-modal btn btn-danger"
+       data-toggle="modal"
+       data-target="#emergencyModal"
+     >
+       <i class="fas fa-camera"> </i> Emergency
+     </button>
+          <div class="modal1 hidden"></div>
+          <div class="modal" id="emergencyModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Emergency</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="emergencyForm">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input
+                      placeholder="Enter your name"
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                               <div class="form-group">
+                      <label for="location">Location:</label>
+                      <input
+                      placeholder="Enter current location"
+                        type="text"
+                        class="form-control"
+                        id="location"
+                        name="location"
+                        required
+                      /> 
+                    </div> OR <div id="country-container"><button id="btn">Get My Location</button></div>
+                    <div class="form-group">
+                      <label for="photo">Photo:</label>
+                      <input
+                        type="file"
+                        class="form-control-file"
+                        id="photo"
+                        name="photo"
+                        accept="image/*"
+                        capture
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="video">Video:</label>
+                      <input
+                        type="file"
+                        class="form-control-file"
+                        id="video"
+                        name="video"
+                        accept="video/*"
+                        capture
+                        required
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="close-modal modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-danger subt"
+                    form="emergencyForm"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> &nbsp; &nbsp;
+       <!-- closed here...  -->
+
+        <div class="navButton">
+         <a href="SignUp.html" target="_blank">
+          <button class="btn btn-outline-primary" onclick="myFunction1()" type="submit">SignUp</button>
+         </a> 
+         <a href="Login.html" target="_blank">
+          <button class="btn btn-outline-success" onclick="myFunction2()" type="submit">Login</button>
+         </a>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- navBar Ends here   -->
+
+    <!-- carousel img start from here    -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-img">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="Img/Floral Drawings Slides.jpg"
+              class="d-block w-100"
+              alt="...."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/147424375/photo/young-girl-cries-for-her-puppy.jpg?s=612x612&w=0&k=20&c=a4MMJfrDpTejfgkXXP8W4Np-Fsdh_kkY_gvYrE-yykY="
+              class="d-block w-100"
+              alt="...."
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://media.istockphoto.com/id/1303833951/photo/vet-doctor-examining-labrador-dog.jpg?b=1&s=170667a&w=0&k=20&c=eDF_W7oSmOyYGqJep1cRO_BPDDoJRu_5o1xJPTaS1O0="
+              class="d-block w-100"
+              alt="...."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/494320720/photo/cow-cry-before-it-was-kill.jpg?s=612x612&w=0&k=20&c=A1200-65noaYl2gRPmnMX3HF-9l5ZbEN-zzeSaFUeEE="
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+       </div>
+    
+
+    <!-- carousel-img End  here    -->
+   
+    <!-- services section start here  -->
+<div id="section--2">...</div>
+<div >...</div>
+
+    <h2>Our Services</h2>
+    <div class="services" >
+ 
+      <div class="planning">
+         <i class="fa-solid fa-calendar-plus"></i>
+         <h1>Planning</h1>
+        <p>we try to ensure that animals receive the proper care and attention they need. To achieve this we have taken
+          many steps:<span id="dots1">...</span><span class="morni" id="more1"> <br>
+            1. Identification of needs.<br> 2. Resource allocation.<br> 3. Safety protocols.<br> 4. Legal
+            considerations.<br> 5. Volunteer management.<br></span></p>
+
+<button onclick="myFunction(1)" id="myBtn1">Read more</button>
+      </div>
+      
+      <div class="support">
+         <i class="fa-solid fa-handshake"></i>
+         <h1>Support</h1>
+         <p>we at our level had done many things to ensure these noble cause won't stop.Like:<span id="dots2">...</span><span class="morni" id="more2"><br>
+          1. Financial support<br>. 2. Volunteer work.<br> 3. Supplies and equipment.<br> 4. Adoption.<br> 5. Legal
+          support.<br></span></p>
+
+<button onclick="myFunction(2)" id="myBtn2">Read more</button>
+      </div>
+ 
+ 
+      <div class="helping">
+         <i class="fa-solid fa-hand-holding-medical"></i>
+         <h1>Helping</h1>
+         <p>We are providing all essential support but <br> sometimes we have to rely on the support and assistance of
+          individuals  and groups to carry out our mission of helping animals in need. <br> To achieve this we are doing:<span id="dots3">...</span><span class="morni" id="more3"> <br>
+            1. Volunteer recruitment.<br> 2. Outreach programs.<br> 3. Adoption events and partnerships.<br> 4. Training and
+            education.<br> 5. Recognition and appreciation.<br></span></p>
+
+         <button onclick="myFunction(3)" id="myBtn3">Read more</button>
+      </div>
+     </div>
+
+    <!-- services section Ends here  -->
+
+    <!-- About section start here  -->
+    <div id="section--1">...</div>
+    <div >...</div>
+    <div class="container">
+      <div class="about">
+        <div class="aboutus">
+          <h1>About Us</h1>
+          <p>some key solutions</p>
+        </div>
+
+        <div class="row1">
+          <div class="col-md-6">
+            <img src="Img/img1.jpg" alt="image" class="img-fluid" />
+          </div>
+          <div class="col-md-6"><p> we try to ensure that animals receive the proper care and attention they need. To achieve this we have taken many steps:<span id="dots4">...</span><span class="morni" id="more4"><br>
+            1. Identification of needs:  It is crucial to identify the needs of animals in rescue situations, such as food, shelter, and medical care.
+            <br> 
+            2. Resource allocation: Proper allocation of resources, such as funding, supplies, and personnel, is necessary to ensure that animals receive the care they need.
+            <br> 
+            3. Safety protocols: Establishing safety protocols for both animals and rescue personnel is crucial to minimize the risk of injury or harm during the rescue process.
+            <br> 
+            4. Legal considerations:  It is important to consider legal aspects, such as permits and regulations, to ensure that the rescue operation is carried out in compliance with local laws.
+            <br> 
+            5. Follow-up care: Planning for follow-up care after the rescue operation, including medical care and adoption services, is essential to ensure that animals continue to receive the care they need.</span></p>
+
+            <button class="btn btn-primary abt" onclick="myFunction(4)" id="myBtn4">Read more</button>
+         
+            </div>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="col-md-6">
+            <img src="Img/img2.jpeg" alt="image" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <p>we at our level had done many things to ensure these noble cause won't stop. Like:<span id="dots5">...</span><span class="morni" id="more5"> <br>
+              1. Financial support: Financial support can help fund rescue operations and emergency services.
+              <br>
+              2. Volunteer work: Volunteers are a valuable resource in animal rescue operations, providing care and
+              support to animals in need, and assisting with transport and other tasks.
+              <br>
+              3. Supplies and equipment: Donations of food, bedding, toys, and other supplies can help support animal
+              rescue efforts, as well as the ongoing care of animals in shelters and foster homes.
+              <br>
+              4. Adoption: Adopting a rescued animal provides a loving home for an animal in need and helps free up
+              space in shelters and rescue organizations for more animals.
+              <br>
+              5. Legal support: Lawyers can provide legal support to animal rescue organizations, helping with permits,
+              contracts, and other legal considerations.</span></p>
+
+            <button class="btn btn-primary abt" onclick="myFunction(5)" id="myBtn5">Read more</button>
+            
+            
+          </div>
+        </div>
+
+        <div class="row1">
+          <div class="col-md-6">
+            <img src="Img/img3.jpg" alt="image" class="img-fluid" />
+          </div>
+          <div class="col-md-6"><p>We are providing all essential support but sometimes we have to rely on the support and assistance of
+            individuals and groups to carry out our mission of helping animals in need. To achieve this we are doing:<span id="dots6">...</span><span class="morni" id="more6"><br>
+              1. Volunteer recruitment: We organises volunteer recruitment drives to enlist individuals who can help
+              with tasks such as animal care, event planning, fundraising, and outreach efforts.
+              <br>
+              2. Outreach programs: Often we host outreach programs and events, such as school visits and community
+              talks, to educate people about animal welfare and the work of the organization.
+              <br>
+              3. Adoption events and partnerships: We organises adoption events so that animals can find permanent and
+              loving homes and this will also create some spaces in the rescue center for the new ones.
+              <br>
+              4. Training and education: We provide training and educational programs to volunteers and staff to ensure
+              they have the skills and knowledge needed to carry out animal rescue operations effectively and safely.
+              <br>
+              5. Recognition and appreciation: We often gives recognition and some appreciation for the efforts of
+              volunteers, donors, and supporters is crucial to maintaining their support and fostering a positive
+              relationship with the community.
+              <br>
+              6. Fundraising: Launching fundraising campaigns and events to generate funds for animal rescue operations
+              and ongoing care for animals.</span></p>
+
+            <button class="btn btn-primary abt" onclick="myFunction(6)" id="myBtn6">Read more</button>
+            
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section Ends here  -->
+
+    <!-- Deparments section starts from here  -->
+    <div id="section--4">...</div>
+    <div >...</div>
+    <div class="container" >
+      <div id="navbar">
+        <div class="head">
+          <h1>Doctors</h1>
+        </div>
+      </div>
+      <p>Doctors are those who always willing to help the needy ones.</p>
+
+      <div class="cards">
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/doc1.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Dipali Sharma</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc2.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Deepak Chandra</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc3.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Doli Yadav</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/doc1.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Dipali Sharma</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc4.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Naveen Prashad</h4>
+            <p>Assitant Doctor</p>
+            <p>PMCH Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc4.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Naveen Prashad</h4>
+            <p>Assitant Doctor</p>
+            <p>PMCH Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc2.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Deepak Chandra</h4>
+            <p>Chief Medical Officer</p>
+            <p>Singapore General Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 150px; width: 150px; border-radius: 50%"
+            src="Img/Doc4.jpg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Dr. Naveen Prashad</h4>
+            <p>Assitant Doctor</p>
+            <p>PMCH Hospital</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="section--5">...</div>
+    <div >...</div>
+    <div class="container">
+      <div id="navbar">
+        <div class="head">
+          <h1>Volunteer</h1>
+        </div>
+      </div>
+      <p>
+        Welcome!  Anyone who want to connect with us in this journey, we welcome them.
+      </p>
+
+      <div class="cards">
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S1.png"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Roshani Srivastava</h4>
+            <p>A B.Sc student</p>
+            <p>Bakhtiyarpur Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Rohan Pal</h4>
+            <p>B.Tech Graduate</p>
+            <p>IIT Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Satyam Verma</h4>
+            <p>B.Tech student</p>
+            <p>BKP Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S1.png"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Roshani Srivastava</h4>
+            <p>A B.Sc student</p>
+            <p>Bakhtiyarpur Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Rohan Pal</h4>
+            <p>B.Tech Graduate</p>
+            <p>IIT Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S3.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Doli Yadav</h4>
+            <p>B.com Graduate</p>
+            <p>BMNU Madheupura</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S2.jpeg"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Satyam Verma</h4>
+            <p>B.Tech student</p>
+            <p>BKP Patna</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%"
+            src="Img/S3.avif"
+            alt="..."
+          />
+          <div class="details">
+            <h4>Doli Yadav</h4>
+            <p>B.com Graduate</p>
+            <p>BMNU Madheupura</p>
+            <div class="logo">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Container -->
+    <div id="section--3">...</div>
+<div >...</div>
+    <div class="h" >
+        <h1>NGOs</h1>
+    </div>
+
+    <div class="container" id="ngo-container">
+      <div class="ngo">
+        <img
+          src="https://strayanimalfoundationindia.org/wp-content/uploads/2022/04/SAFI-2022-compr-5604.jpg"
+          alt=""
+        />
+        <h2><a href="https://strayanimalfoundationindia.org/our-impact/"> STRAY ANIMAL FOUNDATION OF INDIA</a>
+        </h2>
+        <p>Stray Animal Foundation of India works with dedicated advocates on India's front lines to make a difference for the country's most vulnerable animals.</p>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://www.myfurries.com/assets/images/help-animal-main.png"
+          alt=""
+        />
+        <h2><a href="https://www.myfurries.com/help-an-animal/patna">MY FURRIES</a></h2>
+        <p>Our Goals:
+        <br>
+        1. To provide protection, medical care, food & shelter to all the strays in need.
+        <br>
+        2. To vaccinate & sterilize strays in order to curb the spread of diseases & increase in population.
+        <br>
+        3. To educate the community about the benefits of stray management & also help implement the same.
+
+        </p>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://www.animalrahat.com/wp-content/uploads/2023/02/3-512x310.jpg"
+          alt=""
+        />
+        <h2><a href="https://www.animalrahat.com/">ANIMAL RAHAT</a></h2>
+        <p>Animal Rahat (rahat means “relief” in Hindi) is a unique program that aims to help some of the most neglected animals in the world—the bullocks, donkeys, and other working animals of India.</p>
+      </div>
+      <!-- More NGOs here -->
+      <div class="ngo">
+        <img
+          src="https://www.wti.org.in/wp-content/uploads/2022/05/sarus_Ansar_Khan.jpg"
+          alt=""
+        />
+        <h2><a href="https://www.wti.org.in/">WILDLIFE TRUST OF INDIA</a></h2>       <p>We are the most trusted wildlife conservation charity organization in India, dedicated to preserve and protect the natural world and its wild habitats. Our team has been fully committed to India's wildlife for the last 20+ years.</p>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://www.karmafoundation.ngo/img/opd.jpg"
+          alt=""
+        />
+        <h2><a href="https://www.karmafoundation.ngo/">KARMA FOUNDATION</a></h2>
+        <p>We, at Karma Foundation truly believe that animals are the real victims on earth. They didn't declare war, they don't have weapons and they don't want to destroy humans or impose their religion. Their only “crime” is that they exist. Keeping the ever rising cases of accidents, cruelty, starvation, illnesses and so on, we have built an Intensive Care Unit (ICU), Operation Theatre (OT) & Out Patient Department (OPD) for such animals who suffer each day on the streets of the city.</p>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://strawindia.org/images/slider/img-3.jpg"
+          alt=""
+        />
+        
+        <h2><a href="https://strawindia.org/">STRAY RELIEF AND ANIMAL WELFARE (STRAW)</a></h2>
+        <p>STRAW India is a registered non-profit organization that works for the welfare of animals through the medium of humane and animal welfare education. Our efforts enable us to significantly influence school students to develop empathy towards people, compassion towards animals and care for the natural world so that they can make a difference and bring about a positive change.</p>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://dharamsalaanimalrescue.org/wp-content/uploads/2023/01/3.jpg"
+          alt=""
+        />
+        <h2><a href="https://dharamsalaanimalrescue.org/"> DHARAMSALA ANIMAL RESCUE </a></h2>
+        <p>
+          We provide several key programs to achieve our goals: spay/neuter, rabies vaccination, rescue and adoption, street animal feeding, and community education for rabies safety and compassion.
+        </p>
+      </div>
+      <div class="ngo">
+        <img
+          src="https://www.petaindia.com/wp-content/uploads/2023/04/Kolkata-horse-carriages-image-for-feature-with-India-logo-4.png"
+          alt=""
+        />
+        <h2><a href="https://www.petaindia.com/">PETA INDIA</a></h2>
+
+        <p>
+          PETA India focuses primarily on the areas in which the greatest numbers of animals suffer the most: in laboratories, in the food industry, in the leather trade, and in the entertainment business. PETA India's investigations, public education efforts, research, animal rescues, legislative work, special events, celebrity involvement, and national media coverage have resulted in countless improvements to the quality of life for animals and have saved countless animals' lives.
+        </p>
+      </div>
+    </div>
+    <!-- Deparments section Ends  here  -->
+<!-- How to use section  -->
+<div id="section--5">...</div>
+<div >...</div>
+<h1 class="main-h1">How To Use</h1>
+<div class="main-h">
+
+    <div class="steps">
+    <div class="step1">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-1:  </h2>
+        <p>Click on the emergency button.</p>
+    </div>
+
+    <div class="step2">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-2:  </h2>
+        <p>Fill the name.</p>
+    </div>
+</div>
+
+<div class="steps">
+    <div class="step3">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-3:  </h2>
+        <p>Fill the location.</p>
+    </div>
+
+    <div class="step4">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-4:  </h2>
+        <p>You can also fetch location by clicking on 'Get my location'.</p>
+    </div>
+</div>
+
+<div class="steps">
+    <div class="step5">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-5:  </h2>
+        <p>Please provide image of injured animal.</p>
+    </div>
+
+    <div class="step6">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-6:  </h2>
+        <p>Please provide short video ,so that team can understand the situation.</p>
+    </div>
+</div>
+
+    <div class="steps"> 
+    <div class="step7">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-7:  </h2>
+        <p>you have to click submit and you are done.</p>
+    </div>
+
+    <div class="step8">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-8:  </h2>
+        <p>We will provide neccessory information to nearby helping members.</p>
+    </div>
+</div>
+
+    <div class="steps">
+    <div class="step9">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-9:  </h2>
+        <p>You can also help by registring yourself as helping member </p>
+    </div>
+
+    <div class="step10">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Step-10(Optional):  </h2>
+        <p>OR also you can donate.</p>
+    </div>
+</div>
+
+</div>
+
+
+
+<div id="section--6"></div>
+    <!-- Footer start here ! -->
+    <footer>
+      <div class="footer_info">
+          <div class="footer_About">
+              <h1 class="h1">About</h1>
+              <p>This website is created to help those animals as cow,dogs,cat etc. with the help of kind hearted person like you.THANKS </p>
+              <div class="icons">
+                  <ul>
+                      <li><a href="https://www.instagram.com/_emperor_4k/ " target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href="https://twitter.com/_Emperor_4k " target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/_emperor_4k/" target="_blank" ><i class="fa-brands fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer_Link">
+              <h1>Quick Links</h1>
+              <div class="links">
+              <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="#section--1" >About</a></li>
+                   <li><a href="#section--2">Services</a></li>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#section--1">Contact</a></li>
+              </ul></div>
+          </div>
+          <div class="footer_Contacts">
+              <h1>Contacts</h1>
+              <ul>
+                  <li><i class="fa-sharp fa-solid fa-location-dot"></i> Bakhtiyarpur College Of Engineering,Bakhtiyarpur,Bihar-803212</li>
+                  <li><i class="fa-solid fa-envelope"></i><a href="#"> helpingngo@gmail.com</a></li>
+                  <li><i class="fa-solid fa-phone"></i> <a href="#"> 45656567623</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="copy-right">
+          <p>© COPYRIGHT HELPING NGO   ALL RIGHTS ARE RESERVED.</p>
+      </div>
+  </footer>
+  
+  <!-- Footer ends here ...  -->
+
+    <!-- End Example Code -->
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

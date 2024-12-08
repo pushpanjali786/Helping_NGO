@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  color: #fff;
+}
+
+.navbar h1 {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.logo1 img {
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar li {
+    margin: 0;
+  }
+}
+
+.logo1 img {
+  height: 30px;
+}
+/* Container */
+.container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.ngo {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  width: 300px;
+  border: 2px solid #769698a3;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.ngo img {
+  height: 100px;
+}
+.ngo h2 {
+  margin: 30px;
+  font-size: 22px;
+}
+
+.ngo p {
+  margin: 0;
+  font-size: 16px;
+}
